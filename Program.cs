@@ -30,9 +30,10 @@ app.UseAuthorization ();
 if (app.Environment.IsDevelopment())
 {
     Console.WriteLine("Estou no ambiente de desenvolvimento");
-    app.UseSwagger();
-    app.UseSwaggerUI();
 }
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.Run();
 
